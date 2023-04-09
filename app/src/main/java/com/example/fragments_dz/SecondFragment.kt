@@ -23,6 +23,16 @@ class SecondFragment:Fragment(R.layout.second_fragment) {
         tvFirstName.text = arguments?.getString(FIRST_NAME_KEY)
         tvSecondName.text = arguments?.getString(SECOND_NAME_KEY)
         tvEmail.text = arguments?.getString(EMAIL_KEY)
+
+        btnClear.setOnClickListener {
+            val bundle = Bundle().apply {
+                putBoolean(CLEAR_BUTTON_PRESSED,true)
+            }
+            val mainFragment = MainFragment().apply { arguments = bundle }
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container_view, mainFragment).addToBackStack(null)
+                .commit()
+        }
     }
 
 }

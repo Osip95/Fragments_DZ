@@ -22,6 +22,13 @@ class MainFragment: Fragment(R.layout.main_fragment) {
         etEmail = view.findViewById(R.id.textInputEditTextEmail)
         btnGoToSecondActivity = view.findViewById(R.id.btnGoToSecondFragment)
 
+        if(arguments?.getBoolean(CLEAR_BUTTON_PRESSED) == true){
+            etFirstName.setText("")
+            etSecondName.setText("")
+            etEmail.setText("")
+
+        }
+
         btnGoToSecondActivity.setOnClickListener {
             val bundle = Bundle().apply {
                 putString(FIRST_NAME_KEY,etFirstName.text.toString())
