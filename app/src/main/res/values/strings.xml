@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Fragments_DZ</string>
+    <string name="second_name">second name</string>
+    <string name="email">email</string>
+    <string name="first_name">first name</string>
+    <string name="go_to_second_fragment">go to second fragment</string>
+    <string name="clear">Clear</string>
 </resources>
