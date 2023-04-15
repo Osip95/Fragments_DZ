@@ -5,4 +5,9 @@
     <string name="first_name">first name</string>
     <string name="go_to_second_fragment">go to second fragment</string>
     <string name="clear">Clear</string>
+    <string name="formatted_first_name">First name: %1$s</string>
+    <string name="formatted_second_name">Second name: %1$s</string>
+    <string name="formatted_email">Email: %1$s</string>
+
+
 </resources>
